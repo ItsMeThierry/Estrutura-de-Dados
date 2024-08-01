@@ -67,9 +67,7 @@ int programa(slist *list){
                 
             returned = get_element(list, resp); 
 
-            if(returned == -1){
-                printf("Nao foi possivel pois ou a posicao e invalida ou a lista esta vazia\n");
-            } else{
+            if(returned != INT_MIN){
                 printf("Array[%d]: %d\n", resp-1, returned);
             }
 
@@ -84,9 +82,7 @@ int programa(slist *list){
 
             returned = change_element(list, aux, resp);
 
-            if(returned == -1){
-                printf("Nao foi possivel pois ou a posicao e invalida ou a lista esta vazia\n");
-            } else{
+            if(returned != INT_MIN){
                 printf("Valor %d armazenado em Array[%d]\n", resp, aux-1);
             }
 
@@ -101,9 +97,7 @@ int programa(slist *list){
 
             returned = insert_element(list, aux, resp);
 
-            if(returned == -1){
-                printf("Nao foi possivel pois ou a posicao e invalida ou a lista esta cheia\n");
-            } else{
+            if(returned != INT_MIN){
                 printf("Valor Array[%d] modificado para %d\n", aux-1, resp);
             }
 
@@ -115,9 +109,7 @@ int programa(slist *list){
 
             returned = remove_element(list, resp);
 
-            if(returned == -1){
-                printf("Nao foi possivel pois ou a posicao e invalida ou a lista esta vazia\n");
-            } else{
+            if(returned != INT_MIN){
                 printf("Valor Array[%d] = %d removido\n", resp-1, returned);
             }
 

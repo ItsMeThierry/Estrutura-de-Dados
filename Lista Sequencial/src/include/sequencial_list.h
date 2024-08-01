@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include <limits.h>
+#include <stdio.h>
 
 typedef struct sequencial_list{
     int *data;
