@@ -1,0 +1,1 @@
+gcc src/main.c src/linked_list.c -o linked_list

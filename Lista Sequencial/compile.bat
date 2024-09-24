@@ -1,0 +1,1 @@
+gcc src/main.c src/sequencial_list.c -o sequencial_list
