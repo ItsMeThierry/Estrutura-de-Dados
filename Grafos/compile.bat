@@ -1,0 +1,1 @@
+gcc src/main.c src/adjacent_list.c src/adjacent_matrix.c src/queue.c src/stack.c -o grafo
